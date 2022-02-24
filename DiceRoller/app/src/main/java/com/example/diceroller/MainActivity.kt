@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
             5->R.drawable.dice_5
             else-> R.drawable.dice_6
         }
+
+
         // Update the ImageView with the correct drawable resource ID
         diceImage.setImageResource(drawableResource)
 
