@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
         // Find the ImageView in the layout
         val diceImage:ImageView=findViewById(R.id.imageView)
         val diceImage2:ImageView=findViewById(R.id.imageView3)
