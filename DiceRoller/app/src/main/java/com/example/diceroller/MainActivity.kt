@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * Roll the dice and update the screen with the result.
+     * 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
      */
     private fun rollDice() {
         //Create new Dice object with 6 sides and roll the dice
