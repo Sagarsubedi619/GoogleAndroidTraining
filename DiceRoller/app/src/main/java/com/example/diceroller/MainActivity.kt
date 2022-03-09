@@ -40,7 +40,9 @@ class MainActivity : AppCompatActivity() {
 
 
         // Find the ImageView in the layout
+        //test
         val diceImage:ImageView=findViewById(R.id.imageView)
+
         val diceImage2:ImageView=findViewById(R.id.imageView3)
 
         // Determine which drawable resource ID to use based on the dice roll
