@@ -2,10 +2,12 @@ package com.example.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+private const val TAG="MainActivity"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,9 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener { rollDice() }
-
+        logging()
         //Do a dice roll when the app starts
         rollDice()
+    }
+    fun logging(){
+        Log.e(TAG, "ERROR: a serious error like an app crash")
+        Log.w(TAG, "WARN: warns about the potential for serious errors")
+        Log.i(TAG, "INFO: reporting technical information, such as an operation succeeding")
+        Log.d(TAG, "DEBUG: reporting technical information useful for debugging")
+        Log.v(TAG, "VERBOSE: more verbose than DEBUG logs")
     }
 
     /**
@@ -73,4 +82,6 @@ class MainActivity : AppCompatActivity() {
             return (1..numSides).random()
         }
     }
+
+
 }
