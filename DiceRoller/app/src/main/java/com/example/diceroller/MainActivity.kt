@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //test
+
         rollDice()
     }
     fun logging(){
