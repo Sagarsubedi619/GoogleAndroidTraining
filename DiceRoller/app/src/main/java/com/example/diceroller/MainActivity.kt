@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         logging()
         //Do a dice roll when the app starts
 
-
         //test
 
         rollDice()
